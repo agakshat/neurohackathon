@@ -1,0 +1,24 @@
+
+##Description of code filenames and the code in them##
+
+neuro.ipynb : Jupyter notebook with code for data analysis and visualizatons , PCA analysis, correlation of waveforms,
+
+                occurences of reaches and rewards
+
+nn_regress.py : Feed forward NN to regress ot classify depths of a neuron from it's neural activity
+
+nn_classify.py : Feed forward NN to regress ot classify whether a reach will start in a given timestep
+
+
+cnn*.py : Classifying the specific reache occurences without binning using a CNN. Also includes files to interpret the code using gradients.
+cnn_regression regresses amplitudes of joystick data
+
+cluster_neurons : heirachical clustering of neurons based on firing instances
+
+preprocess_tss and tss_to_binary : preprocessing of raw data
+
+regression.py : Code to regress amplitude and velocity of joystick using neuron firing patterns.
+
+classifiers.py : Code for several classic ML algorithms like Random forest, SVM, naive Bayes to predict reach occurences from neural firing patterns
+
+rnn.py : Code to Use a LSTM to predict reach occurences from neural firing activity to model time dependencies
